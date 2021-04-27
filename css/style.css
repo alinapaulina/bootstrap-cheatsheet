@@ -1,0 +1,51 @@
+/* Modify the backgorund color */
+/* .navbar-custom {
+    background-color: rgb(36, 38, 36);
+} */
+
+/* .navbar {
+    background-color: rgb(48, 41, 41);
+    border-color: rgb(48, 31, 31);
+    
+} */
+
+.navbar-brand {
+    color: rgb(200, 194, 194);
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.link {
+    color: rgb(200, 194, 194);
+}
+.link:hover{
+    color: black;
+}
+.dropdown-toggle{
+    color: rgb(203, 195, 195);
+}
+.dropdown-toggle:hover{
+    color: black;
+}
+.dropdown-menu > li > a{
+    background-image: none;
+    background-color: rgb(162, 162, 162);
+}
+.dropdown-menu > li > a:hover{
+    background-image: none;
+    background-color:  rgb(142, 142, 142);
+}
+
+
+#mark {
+    background-color: rgb(230, 230, 230);
+}
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+

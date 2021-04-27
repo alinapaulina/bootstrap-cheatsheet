@@ -5,21 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap-cheatsheet/css/style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
+   <!--NAVBAR-->
+    <!-- Navbar text is light and background is dark -->
+    <nav class="navbar navbar-inverse">
+      <a class="navbar-brand" href="#">
+        
+      </a>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          class="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul class="nav navbar-nav">
+            <li><a href="#" class="link">Link</a></li>
+            <li><a href="#" class="link">Link</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <!-- <li role="separator" class="divider"></li> -->
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <!--JUMBOTRON-->
+    <div class="jumbotron">
+     <div class="container">
+       <h1>Welcome to my Website</h1>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo vero nihil voluptate ut. 
+         Ab dignissimos possimus iure voluptatibus rerum.</p>
+         <a href="#" class="btn btn-success">Read More</a>
+     </div>
+    </div>
     <!--TYPOGRAPHY-->
     <div class="container">
-      <h1 class="page-header">Hello, world! <small>secondary text</small></h1>
+       <!-- <h1 class="page-header">Hello, world! <small>secondary text</small></h1>
       <p class="lead">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       </p>
       <p>
-        <mark>Lorem ipsum</mark> dolor sit amet consectetur, adipisicing elit.
+        <mark id="mark">Lorem ipsum</mark> dolor sit amet consectetur, adipisicing elit.
         Eligendi odio quasi fugit nisi. Veniam maiores quisquam dolorem vitae,
         quidem itaque <del>omnis </del>assumenda esse nesciunt obcaecati
         veritatis sit inventore! <u>Optio, sunt!</u>
-      </p>
+      </p> --> 
       <hr />
       <!--ALIGNMENT & TRANSFORMATION-->
       <p class="text-left text-lowercase">Left aligned text</p>
@@ -255,62 +326,174 @@
       bs3-label:success	Success Label
       bs3-label:warning	Warning Label -->
       <div class="well">
-      <span class="label label-default">Default</span>
-      <h1>Hello <span class="label label-primary">Primary</span></h1>
-      <span class="label label-danger">Danger</span>
-      <span class="label label-info">Info</span>
-      <span class="label label-success">Success</span>
-      <span class="label label-warning">Warning</span>
-    </div>
-      <!--BADGES-->
-      <a href="#"> inbox <span class="badge">50</span></a>
+        <span class="label label-default">Default</span>
+        <h1>Hello <span class="label label-primary">Primary</span></h1>
+        <span class="label label-danger">Danger</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-warning">Warning</span>
+        <!--BADGES-->
+        <a href="#"> inbox <span class="badge">50</span></a>
 
-      <button type="button" class="btn btn-primary btn-default">
-        messages <span class="badge">99+</span>
-      </button>
+        <button type="button" class="btn btn-primary btn-default">
+          messages <span class="badge">99+</span>
+        </button>
+      </div>
     </div>
     <br />
     <!-- IMAGES -->
     <div class="container">
-      <!-- <img class="thumbnail" src="../img2/img/img-2.jpg" style="width: 400px" />
-      <img class="img-rounded" src="../img2/img/img-5.jpg" /><br /><br />
-      <img class="img-circle" src="../img2/img/img-9.jpg" /> -->
+      <img class="thumbnail" src="../img2/img/img-2.jpg" style="width: 400px" />
+      <img
+        class="img-rounded"
+        src="../img2/img/img-5.jpg"
+        style="width: 400px"
+      /><br /><br />
+      <img
+        class="img-circle"
+        src="../img2/img/img-9.jpg"
+        style="width: 400px"
+      />
+    </div>
+    <hr />
+    <!--GRIDS-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8 col-xs-8">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quas in facere, voluptatem, quisquam eaque distinctio, officia
+            soluta blanditiis cumque rerum commodi. Voluptates cum, architecto
+            quidem cumque eos aut quam.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quas in facere.
+          </p>
+        </div>
+      </div>
     </div>
 
-  
-
-   <div class="row">
-       <div class="col">andrei pasol nahui</div>
-       <div class="col">pula    </div>
-    </div>
-   
-      <!-- <div class="row">
-        <div class="col-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
           <img
             class="thumbnail"
             src="../img2/img/img-2.jpg"
-            style="width: 400px"
+            style="width: 380px"
           />
         </div>
-        <div class="col-2">
+        <div class="col-md-4">
           <img
             class="img-rounded"
             src="../img2/img/img-5.jpg"
-            style="width: 400px"
-          />
+            style="width: 380px"
+          /><br /><br />
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <img
             class="img-circle"
             src="../img2/img/img-9.jpg"
-            style="width: 400px"
+            style="width: 380px"
           />
-        </div> -->
-    <!-- </div> -->
-    
-      
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quas in facere, voluptatem, quisquam eaque distinctio, officia
+            soluta blanditiis cumque rerum commodi. Voluptates cum, architecto
+            quidem cumque eos aut quam.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quas in facere.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quas in facere, voluptatem, quisquam eaque distinctio, officia
+            soluta blanditiis cumque rerum commodi.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quas in facere, voluptatem, quisquam eaque distinctio, officia
+            soluta blanditiis cumque rerum commodi. Quisquam eaque distinctio,
+            officia soluta
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+      </div>
+    </div>
+
     <div style="height: 400px"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
- </html>
+</html>
